@@ -20,7 +20,7 @@ No hay limitaciones más que las expresadas en este documento para realizar el d
 
 La tarea debe estar contenida en este proyecto, debes clonarlo y realizar tu desafìo en las carpetas ,backend, frontend y en el documento DESAFIO.md
 
-## Frontend
+## Front(Full-stack)
 
 Carpeta `/frontend` hay 4 puntos a evaluar:
 Construir una pequeña calculadora.
@@ -36,7 +36,26 @@ Construir una pequeña calculadora.
 
 
 **Coingecko API `GET api/v3/coins/` endpoint:**  https://api.coingecko.com/api/v3/coins/
- 
+
+
+## Backend
+### Construcción de una API de Back-end para Criptomonedas utilizando la API de CoinGecko
+Carpeta `/backendCoinGecko`. hay 9 puntos a evaluar:
+
+1.**Entender las especificaciones de la API de Coingecko**: Comprender cómo funciona el endpoint `https://api.coingecko.com/api/v3/coins/` y qué datos devuelve.
+2. **Creación de la conexión a la base de datos MongoDB**: Utilizando pymongo u otro ORM, establece una conexión con una base de datos MongoDB.
+3. **Desarrollo de una función de recuperación de datos**: Crea una función en Python que se conecte a la API de CoinGecko y recupere los datos sobre las criptomonedas.
+4. **Almacenamiento de datos en MongoDB**: Almacena el ID de la criptomoneda, el nombre, la imagen y el precio actual en tu base de datos MongoDB.
+5. **Creación de endpoints en la API**:
+    - ‘/coins’: que retorne todos los datos de criptodivisas almacenados en la base de datos.
+    - ‘/coins/<coin_id>‘: que retorne los datos para una cripto específica basada en su ID.
+    - ‘/calculate’: que acepte una criptomoneda y una cantidad y devuelva la conversión de esa cantidad a la criptomoneda dada utilizando el precio actual.
+6. **Implementación de un mecanismo de programación** para actualizar los precios de las criptomonedas en tu base de datos cada cierto tiempo (por ejemplo, cada 10 minutos).
+7. **Pruebas unitarias**: Desarrolla pruebas unitarias para cada función y endpoint para asegurarte de que están funcionando correctamente.
+8. **Pruebas de integración**: Realiza pruebas de integración para verificar que todo el sistema funcione correctamente en conjunto.
+9. **Documentación**: Documenta tu API, incluyendo cómo ponerla en marcha, cómo usar cada endpoint y cualquier otra información que creas relevante.
+
+
 ## Backend
 
 Carpeta `/backend`. hay 3 puntos a evaluar:
